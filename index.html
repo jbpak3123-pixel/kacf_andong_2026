@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<title>한국미술문화포럼 창립기념 회원단합대회 신청서</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Song+Myung&family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  background: #EFE9DA;
+  color: #26241F;
+  line-height: 1.7;
+  -webkit-text-size-adjust: 100%;
+}
+
+.page {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 20px 80px;
+}
+
+.lattice {
+  height: 64px;
+  background-image:
+    repeating-linear-gradient(0deg, transparent 0 22px, #C9BFA5 22px 24px),
+    repeating-linear-gradient(90deg, transparent 0 22px, #C9BFA5 22px 24px);
+  opacity: 0.5;
+}
+
+.hero {
+  padding: 40px 8px 32px;
+  text-align: center;
+  border-bottom: 1px solid #C9BFA5;
+}
+
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.13em;
+  color: #223A5E;
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+
+.hero h1 {
+  font-family: 'Song Myung', serif;
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0 0 14px;
+  color: #1B1A16;
+  line-height: 1.4;
+}
+
+.hero p.sub {
+  font-size: 14px;
+  color: #5C5A50;
+  margin: 0;
+  padding: 0 4px;
+}
+
+.section {
+  padding: 28px 4px;
+  border-bottom: 1px solid #C9BFA5;
+}
+
+.section h2 {
+  font-family: 'Song Myung', serif;
+  font-size: 19px;
+  font-weight: 400;
+  margin: 0 0 4px;
+  color: #1B1A16;
+}
+
+.section .h-sub {
+  font-size: 13px;
+  color: #8A8676;
+  margin: 0 0 20px;
+}
+
+.sub-block {
+  margin: 24px 0 20px;
+  padding-top: 20px;
+  border-top: 1px dashed #C9BFA5;
+}
+
+.sub-block h3 {
+  font-family: 'Song Myung', serif;
+  font-size: 17px;
+  font-weight: 400;
+  margin: 0 0 4px;
+  color: #1B1A16;
+}
+
+.sub-block .fee-line {
+  font-size: 14px;
+  font-weight: 700;
+  color: #A63D2F;
+  margin: 0 0 14px;
+}
+
+.info-box {
+  background: #FFFFFF;
+  border: 1px solid #DAD3BF;
+  padding: 16px;
+  margin-bottom: 14px;
+}
+
+.info-box .label {
+  font-size: 12px;
+  color: #8A8676;
+  margin: 0 0 6px;
+}
+
+.info-box .value {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1B1A16;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.copy-btn {
+  font-size: 12px;
+  border: 1px solid #223A5E;
+  color: #223A5E;
+  background: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-family: inherit;
+  min-height: 34px;
+}
+
+.copy-btn:active { background: #223A5E; color: #fff; }
+
+.field {
+  margin-bottom: 22px;
+}
+
+.field label {
+  display: block;
+  font-size: 14.5px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #1B1A16;
+}
+
+.field .req { color: #A63D2F; }
+
+.field .hint {
+  font-size: 12px;
+  color: #8A8676;
+  margin: 4px 0 0;
+}
+
+input[type=text], input[type=tel], input[type=email], input[type=number], textarea, select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-family: inherit;
+  border: 1px solid #C4BCA5;
+  background: #fff;
+  color: #26241F;
+  min-height: 46px;
+  border-radius: 2px;
+}
+
+textarea { resize: vertical; min-height: 80px; }
+
+.date-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.date-row input {
+  text-align: center;
+  padding: 12px 4px;
+  min-width: 0;
+}
+
+.date-row input#f_year { flex: 1.4; }
+.date-row input#f_month, .date-row input#f_day { flex: 1; }
+
+.date-row span {
+  font-size: 14px;
+  color: #5C5A50;
+  flex-shrink: 0;
+}
+
+.radio-group, .check-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.radio-group label, .check-group label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 10px 4px;
+}
+
+.radio-group input, .check-group input {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 16px;
+  background: #223A5E;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  margin-top: 10px;
+  min-height: 52px;
+}
+
+.submit-btn:active { background: #1A2C48; }
+.submit-btn:disabled { background: #B4B2A9; cursor: not-allowed; }
+
+.err {
+  color: #A63D2F;
+  font-size: 12.5px;
+  margin-top: 4px;
+  display: none;
+}
+
+.confirm-screen {
+  padding: 40px 4px;
+  text-align: center;
+}
+
+.confirm-screen h2 {
+  font-family: 'Song Myung', serif;
+  font-size: 21px;
+  margin-bottom: 8px;
+}
+
+.confirm-detail {
+  text-align: left;
+  background: #fff;
+  border: 1px solid #DAD3BF;
+  padding: 16px;
+  margin: 20px 0;
+  font-size: 13.5px;
+}
+
+.confirm-detail div {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 6px 0;
+  border-bottom: 1px dashed #EAE4D3;
+}
+
+.confirm-detail div:last-child { border-bottom: none; }
+.confirm-detail span:first-child { color: #8A8676; flex-shrink: 0; }
+.confirm-detail span:last-child { font-weight: 700; text-align: right; }
+
+.admin-toggle {
+  text-align: center;
+  padding: 20px 4px 0;
+}
+
+.admin-toggle a {
+  font-size: 12px;
+  color: #8A8676;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.admin-panel {
+  padding: 24px 4px;
+}
+
+.admin-row {
+  font-size: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #EAE4D3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px 8px;
+}
+
+.loading-note { text-align: center; font-size: 13px; color: #8A8676; padding: 30px 0; }
+
+@media (min-width: 480px) {
+  .hero h1 { font-size: 30px; }
+  .hero p.sub { font-size: 15px; }
+  .admin-row { grid-template-columns: 1fr 1fr 1fr 1fr; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="lattice"></div>
+
+  <div class="hero">
+    <p class="eyebrow">KOREA ART AND CULTURE FORUM</p>
+    <h1>한국미술문화포럼 창립기념<br>회원단합대회</h1>
+    <p class="sub">2026년 9월 10일(목) ~ 11일(금), 1박 2일 · 경상북도 안동시 일원 · 참가비 1인 5만원</p>
+  </div>
+
+  <div class="section" id="formSection">
+    <div id="formIntro">
+      <h2>참가 신청서</h2>
+      <p class="h-sub">아래 정보를 입력해 주세요</p>
+    </div>
+
+    <form id="applyForm">
+      <div class="field">
+        <label>성명 <span class="req">*</span></label>
+        <input type="text" id="f_name" name="name" autocomplete="name" placeholder="홍길동">
+        <p class="err" id="e_name">성명을 입력해 주세요.</p>
+      </div>
+
+      <div class="field">
+        <label>휴대전화번호 <span class="req">*</span></label>
+        <input type="tel" id="f_phone" name="tel" autocomplete="tel" inputmode="numeric" placeholder="01012345678">
+        <p class="hint">숫자만 입력해 주세요.</p>
+        <p class="err" id="e_phone">올바른 휴대전화번호를 입력해 주세요.</p>
+      </div>
+
+      <div class="field">
+        <label>여행자보험 가입을 위한 생년월일 <span class="req">*</span></label>
+        <div class="date-row">
+          <input type="text" id="f_year" inputmode="numeric" maxlength="4" placeholder="0000"><span>년</span>
+          <input type="text" id="f_month" inputmode="numeric" maxlength="2" placeholder="00"><span>월</span>
+          <input type="text" id="f_day" inputmode="numeric" maxlength="2" placeholder="00"><span>일</span>
+        </div>
+        <p class="err" id="e_birth">생년월일을 정확히 입력해 주세요.</p>
+      </div>
+
+      <div class="field">
+        <label>여행자보험 가입을 위한 성별 <span class="req">*</span></label>
+        <div class="radio-group">
+          <label><input type="radio" name="gender" value="남">남성</label>
+          <label><input type="radio" name="gender" value="여">여성</label>
+        </div>
+        <p class="err" id="e_gender">성별을 선택해 주세요.</p>
+      </div>
+
+      <div class="field">
+        <label>관광버스 탑승 여부 <span class="req">*</span></label>
+        <div class="radio-group">
+          <label><input type="radio" name="bus" value="탑승(서울 집결)">탑승 (서울 인사동 탑골공원 옆 집결)</label>
+          <label><input type="radio" name="bus" value="개별이동(현지합류)">개별 이동 (현지 합류)</label>
+        </div>
+        <p class="err" id="e_bus">탑승 여부를 선택해 주세요.</p>
+      </div>
+
+      <div class="field">
+        <label>특이사항 (알레르기, 건강상 유의사항 등)</label>
+        <textarea id="f_notes" placeholder="해당 사항이 없으면 비워두셔도 됩니다"></textarea>
+      </div>
+
+      <div class="sub-block">
+        <h3>참가비 납부 안내</h3>
+        <p class="fee-line">참가비 1인 50,000원</p>
+        <div class="info-box">
+          <p class="label">납부 계좌</p>
+          <p class="value">농협 352-2389-7204-73 <button type="button" class="copy-btn" onclick="copyAccount()">복사</button></p>
+          <p class="label" style="margin-top:10px;">예금주</p>
+          <p class="value" style="font-size:15px;">박광숙 (총무이사)</p>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>참가비 입금자명 <span class="req">*</span></label>
+        <input type="text" id="f_payer" placeholder="신청자 본인 성함과 다를 경우 반드시 기재">
+        <p class="err" id="e_payer">입금자명을 입력해 주세요.</p>
+      </div>
+
+      <div class="field">
+        <label>참가비 입금 확인 <span class="req">*</span></label>
+        <div class="radio-group">
+          <label><input type="radio" name="payment" value="입금완료">입금 완료</label>
+          <label><input type="radio" name="payment" value="입금예정">입금 예정</label>
+        </div>
+        <p class="err" id="e_payment">입금 여부를 선택해 주세요.</p>
+      </div>
+
+      <div class="field">
+        <label style="display:flex; align-items:flex-start; gap:10px; font-weight:400;"><input type="checkbox" id="f_agree" style="width:20px;height:20px;flex-shrink:0;margin-top:2px;"><span>개인정보(성명, 연락처, 생년월일, 성별) 수집·이용에 동의합니다 <span class="req">*</span></span></label>
+        <p class="err" id="e_agree">개인정보 수집·이용에 동의해 주세요.</p>
+      </div>
+
+      <button type="submit" class="submit-btn" id="submitBtn">신청서 제출하기</button>
+    </form>
+
+    <div id="confirmScreen" class="confirm-screen" style="display:none;">
+      <h2>참가 신청이 접수 되었습니다</h2>
+      <p style="color:#5C5A50; font-size:14px;">아래 내용을 확인해 주세요.</p>
+      <div class="confirm-detail" id="confirmDetail"></div>
+      <p style="font-size:12.5px; color:#8A8676;">문의: 한국미술문화포럼 사무국</p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+var SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxUdFt5qCjE1pdQEx5pZKFmCKYgT6oERL5sMEAeEGiJ-FnNwu37DZXf88B2_UHo3DMCcw/exec';
+
+function copyAccount() {
+  navigator.clipboard.writeText('352-2389-7204-73').then(() => {
+    alert('계좌번호가 복사되었습니다.');
+  }).catch(() => {
+    alert('복사에 실패했습니다. 계좌번호: 352-2389-7204-73');
+  });
+}
+
+function showError(id, show) {
+  const el = document.getElementById(id);
+  if (el) el.style.display = show ? 'block' : 'none';
+}
+
+document.getElementById('applyForm').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  try {
+    await handleSubmit();
+  } catch (err) {
+    console.error('신청서 제출 오류:', err);
+    alert('제출 중 예상치 못한 오류가 발생했습니다. 다시 시도해 주시고, 계속 반복되면 사무국으로 문의해 주세요.\n\n오류 내용: ' + err.message);
+    const btn = document.getElementById('submitBtn');
+    btn.disabled = false;
+    btn.textContent = '신청서 제출하기';
+  }
+});
+
+async function handleSubmit() {
+  const name = document.getElementById('f_name').value.trim();
+  const phone = document.getElementById('f_phone').value.trim().replace(/[^0-9]/g, '');
+  const year = document.getElementById('f_year').value.trim().replace(/[^0-9]/g, '');
+  const month = document.getElementById('f_month').value.trim().replace(/[^0-9]/g, '');
+  const day = document.getElementById('f_day').value.trim().replace(/[^0-9]/g, '');
+  const gender = document.querySelector('input[name=gender]:checked');
+  const bus = document.querySelector('input[name=bus]:checked');
+  const notes = document.getElementById('f_notes').value.trim();
+  const payer = document.getElementById('f_payer').value.trim();
+  const payment = document.querySelector('input[name=payment]:checked');
+  const agree = document.getElementById('f_agree').checked;
+
+  let valid = true;
+  showError('e_name', false); showError('e_phone', false); showError('e_birth', false);
+  showError('e_gender', false); showError('e_bus', false); showError('e_payer', false);
+  showError('e_payment', false); showError('e_agree', false);
+
+  const m = parseInt(month, 10), d = parseInt(day, 10);
+  const birthValid = /^(18|19|20)[0-9]{2}$/.test(year) && m >= 1 && m <= 12 && d >= 1 && d <= 31;
+
+  if (!name) { showError('e_name', true); valid = false; }
+  if (!/^01[0-9]{8,9}$/.test(phone)) { showError('e_phone', true); valid = false; }
+  if (!birthValid) { showError('e_birth', true); valid = false; }
+  if (!gender) { showError('e_gender', true); valid = false; }
+  if (!bus) { showError('e_bus', true); valid = false; }
+  if (!payer) { showError('e_payer', true); valid = false; }
+  if (!payment) { showError('e_payment', true); valid = false; }
+  if (!agree) { showError('e_agree', true); valid = false; }
+
+  if (!valid) {
+    const firstErr = document.querySelector('.err[style*="display: block"]');
+    if (firstErr) firstErr.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    return;
+  }
+
+  const btn = document.getElementById('submitBtn');
+  btn.disabled = true;
+  btn.textContent = '제출 중…';
+
+  const id = 'app_' + Date.now() + '_' + Math.random().toString(36).slice(2, 8);
+  const birthDisplay = year + '년 ' + String(m).padStart(2, '0') + '월 ' + String(d).padStart(2, '0') + '일';
+
+  const record = {
+    name, phone,
+    birth: birthDisplay,
+    gender: gender.value,
+    bus: bus.value,
+    notes: notes || '-',
+    payer,
+    payment: payment.value,
+    submittedAt: new Date().toISOString()
+  };
+
+  if (SCRIPT_URL && SCRIPT_URL.indexOf('PASTE_YOUR') === -1) {
+    fetch(SCRIPT_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify(record)
+    }).catch(function(err) {
+      console.error('구글 시트 전송 실패:', err);
+    });
+  }
+
+  if (typeof window.storage !== 'undefined' && window.storage && window.storage.set) {
+    window.storage.set(id, JSON.stringify(record), true).catch(function(err) {
+      console.error('임시 저장 실패:', err);
+    });
+  }
+
+  document.getElementById('formIntro').style.display = 'none';
+  document.getElementById('applyForm').style.display = 'none';
+  const confirmDetail = document.getElementById('confirmDetail');
+  confirmDetail.innerHTML =
+    '<div><span>성명</span><span>' + name + '</span></div>' +
+    '<div><span>연락처</span><span>' + phone + '</span></div>' +
+    '<div><span>생년월일</span><span>' + birthDisplay + '</span></div>' +
+    '<div><span>성별</span><span>' + gender.value + '</span></div>' +
+    '<div><span>버스 탑승</span><span>' + bus.value + '</span></div>' +
+    '<div><span>입금자명</span><span>' + payer + '</span></div>' +
+    '<div><span>입금 상태</span><span>' + payment.value + '</span></div>';
+  document.getElementById('confirmScreen').style.display = 'block';
+  document.getElementById('confirmScreen').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+</script>
+</body>
+</html>
